@@ -72,6 +72,13 @@ input[type=text], input[type=number] {
     color: red;
   }
 
+  @media screen and (max-width: 600px) {
+    .content-list {
+        height: 95%;
+        width: 95%;
+        background-color: #dfe6e9;
+    }
+}
   /*
   input[type=text]:focus {
     border: 3px solid #555;

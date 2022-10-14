@@ -47,10 +47,10 @@ hr {
     color: #457b9d;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .content-list {
         height: 95%;
-        width: 100%;
-        background-color: red;
+        width: 95%;
+        background-color: #dfe6e9;
     }
 }

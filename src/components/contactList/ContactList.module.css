@@ -6,10 +6,17 @@
 .contacts-container-master{
     display: flex;
     flex-direction: column;
+    min-height: 299px;
+    max-height: 300px;
+    overflow: auto;
 }
 
 .contact-image{
     width: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-data{
@@ -32,18 +39,49 @@
 
 .img-avatar{
     width: 100%;
-    height: 100%;
+    height: auto;
     border-radius: 50%;
+
+    
 }
 
 .img-deletes{
     
     width: 30%;
-    height: 30%;
+    height: auto;
     
     cursor: pointer;
     
 
+}
+
+@media screen and (max-width: 600px) {
+    .contacts-container{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 20px;
+        position: relative;;
+    }
+
+    .contact-image{
+        width: 30%;
+    }
+    
+    .contact-data{
+        width: 100%;
+        margin: 15px;
+    }
+    
+    .img-deletes{
+    
+        width: 30px;
+        height: 30px;
+        position:absolute;
+        left: 190px;
+        top: 0px;
+    
+    }
 }
 /*
 const style = {
