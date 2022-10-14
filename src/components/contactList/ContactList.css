@@ -1,0 +1,55 @@
+.contacts-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.contacts-container-master{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-image{
+    width: 10%;
+}
+
+.contact-data{
+    width: 80%;
+    margin: 15px;
+}
+
+.contact-data :first-child{
+    font-weight: bold;
+}
+                
+.contact-buttons{
+    height: auto;
+    width: 10%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-avatar{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.img-delete{
+    
+    width: 30%;
+    height: 30%;
+    
+    cursor: pointer;
+    
+
+}
+/*
+const style = {
+        width: size,
+        height: size,
+        borderRadius: '50%',
+        objectFit: 'cover',
+    };
+*/

@@ -1,0 +1,15 @@
+.content-dasboard{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+@media (max-width: 800px) {
+  .content-dasboard {
+    height: 80%;
+    width: 80%;
+  }
+}
+*/
