@@ -1,26 +1,26 @@
-import "./ContactList.css"
+import styles from "./ContactList.module.css"
 
-const ContactList = ( { listCont, delUser } ) => {
+const ContactList = ({ listCont, delUser }) => {
 
-    return(
-        <div className="contacts-container-master">
-            {listCont.map((user)=>(
-                <div className="contacts-container" key={user.id}>
-                    <div className="contact-image">
-                        <img className="img-avatar" src={user.gender === "M" ? "/images/avatarMasculino.jpg":"/images/avatarFemenino.jpg" } alt="sin Img" />
+    return (
+        <div className={styles['contacts-container-master']}>
+            {listCont.map((user) => (
+                <div className={styles['contacts-container']} key={user.id}>
+                    <div className={styles['contact-image']}>
+                        <img className={styles['img-avatar']} src={user.gender === "M" ? "/images/avatarMasculino.jpg" : "/images/avatarFemenino.jpg"} alt="sin Img" />
                     </div>
-                    <div className="contact-data">
+                    <div className={styles['contact-data']}>
                         <p>{user.name}</p>
                         <p>{user.phone}</p>
                     </div>
-                    <div className="contact-buttons">
-                        <img className="img-delete" src="/images/delete.png" alt="sin Img" onClick={()=>delUser(user.id, user.name)}/>
+                    <div className={styles['contact-buttons']}>
+                        <img className={styles['img-deletes']} src="/images/delete.png" alt="sin Img" onClick={() => delUser(user.id, user.name)} />
                     </div>
-                    </div>
+                </div>
 
             ))}
-            
-            
+
+
         </div>
     )
 }

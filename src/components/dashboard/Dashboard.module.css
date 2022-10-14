@@ -1,8 +1,7 @@
 
 
 .content-list {
-    /*background-color: #dfe6e9;*/
-    background-color: blue;
+    background-color: #dfe6e9;
     border-radius: 5px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
     margin-bottom: 30px;
@@ -48,10 +47,10 @@ hr {
     color: #457b9d;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .content-list {
         height: 95%;
-        width: 100%;
-        background-color: red;
+        width: 95%;
+        background-color: #dfe6e9;
     }
 }

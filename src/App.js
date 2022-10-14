@@ -1,4 +1,4 @@
-import './App.css';
+import styles from './App.module.css';
 import { Dashboard } from './components/dashboard/Dashboard';
 import { useState } from "react";
 import { PanelEdit } from './components/panelEddit/PanelEdit';
@@ -51,7 +51,7 @@ function App() {
 
 
   return (
-    <div className="content-dasboard">
+    <div className={styles["content-dasboard"]}>
       {!editt ? <Dashboard users={contacts} clearUsers={handleClearList} addUser={handleChangeEdit} deleteUser={deleteUser} /> : <PanelEdit changeEdit={handleChangeEdit} addContact={addUser} />}
     </div>
   );
